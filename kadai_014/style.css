@@ -1,0 +1,41 @@
+body {
+  font-family: "Arial", "Meiryo", sans-serif;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+}
+
+html{
+  font-size: 20px;
+}
+
+.skyblue{
+  color:skyblue;
+}
+
+.pink {
+  color: rgb(255,192,203);
+}
+
+# font wight {
+  font-size: bold;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  letter-spacing: 1.2em;
+  text-shadow: 4px 4px 6px blue;
+  border-bottom: 3px solid rgb(115, 115, 114);
+
+}
+
+#name,
+#birthdate,
+#blood-type {
+    font-weight: bold;
+}
