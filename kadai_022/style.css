@@ -1,0 +1,128 @@
+
+@media screen and (max-width:768px) {
+  div {
+    display: block;
+  }
+}
+/* この要素の上下左右余白を0にする */
+
+h1,
+p,
+body {
+  margin: 0;
+}
+
+/* 記事内全てのp要素とa要素のフォントサイズを20pxとする */
+
+p,
+a {
+  margin: 0;
+
+  font-size: 20px;
+}
+
+/*header要素内のスタイル：下の余白を20px
+背景色を rgb(244, 79, 79)
+中の要素：中央揃え
+h1要素内のスタイル：文字色をrgb(255, 255, 255)*/
+
+header {
+  margin-bottom: 20px;
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+}
+
+/*  main内スタイルの設定 */
+main {
+  margin: 10px;
+}
+
+#parent {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.contents {
+  border: solid 3px rgb(238, 204, 204);
+      flex-basis: 25%;
+      padding: 10px 15px;
+      margin: 20px 0;
+      text-align: center;
+
+  }
+
+  /* h2要素のフォントサイズを25pxにし、下線（太さ3px、点線、色rgb(236, 122, 122)）を引きます。 */
+  .contents h2 {
+    font-size: 25px;
+    border-bottom: dotted 3px rgb(236, 122, 122); 
+
+  }
+
+  /* h2要素の前に「●」記号を表示します。色はrgb(239, 111, 139)とします。 */
+  .contents h2::before {
+    content: "●";
+    color: rgb(239, 111, 139);
+   
+  }
+
+  .contents p:nth-of-type(2)::first-letter {
+    font-weight: bold;
+    color: rgb(97, 206, 249);
+  }
+
+  .contents img {
+    margin: 10px 0;
+    width: 70%;
+  }
+  
+  footer {
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+  }
+  
+  footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  footer a:visited {
+    color: rgb(193, 234, 251);
+  }
+  
+  footer a:hover {
+    color: rgb(245, 178, 168);
+  }
+
+  .decoration{
+    letter-spacing: 1.5em;
+    text-decoretion:underline;
+  }
+  
+
+  
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  #parent {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #parent {
+    flex-direction: column;
+  }
+}
+
+
